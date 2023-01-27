@@ -3,13 +3,9 @@
 #include "math/xmath.h"
 
 int main() {
-    Shape shape;
-    shape.l = 10;
-    shape.w = 10;
 
-    Circle circle;
-    circle.r = 5;
-
+    Quad* quad = new_quad(10, 4);
+    Circle* circle = new_circle(5.2);
     Vector2* vector2 = new_vector2(10, 9);
 
     printf("%d\n", factor_binomial_to_gcf(5, 10));

@@ -36,20 +36,33 @@ int factor_binomial_to_gcf(int a, int b) { // it actually does
     }
 }
 
-int findArea(Shape s) {
-    return s.l * s.w;
+int findArea(Quad* s) {
+    return s->l * s->w;
 }
 
-int findPerimeter(Shape s) {
-    return (2 * s.l) + (2 * s.w);
+int findPerimeter(Quad* s) {
+    return (2 * s->l) + (2 * s->w);
 }
 
-int findCircleDiameter(Circle c) {
-    return c.r * 2;
+int findCircleDiameter(Circle* c) {
+    return c->r * 2;
 }
 
-int findCircleArea(Circle c) {
-    return (c.r * c.r) * pi;
+int findCircleArea(Circle* c) {
+    return (c->r * c->r) * pi;
+}
+
+Quad* new_quad(int l, int w) {
+    Quad* q = malloc(sizeof(Quad));
+    q->l = l;
+    q->w = w;
+    return q;
+}
+
+Circle* new_circle(double r) {
+    Circle* c = malloc(sizeof(Circle));
+    c->r = r;
+    return c;
 }
 
 Vector2* new_vector2(int x, int y) {

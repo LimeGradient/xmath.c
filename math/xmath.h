@@ -1,7 +1,7 @@
 #ifndef XMATH
 #define XMATH
 
-struct Shape
+struct Quadrilateral
 {
     int l;
     int w;
@@ -15,11 +15,14 @@ struct Vector2
     int x;
     int y;
 };
-Vector2* new_vector2(int x, int y);
 
-typedef struct Shape Shape;
+typedef struct Quadrilateral Quad;
 typedef struct Circle Circle;
 typedef struct Vector2 Vector2;
+
+Quad* new_quad(int l, int w);
+Circle* new_circle(double r);
+Vector2* new_vector2(int x, int y);
 
 double pi;
 
@@ -27,10 +30,10 @@ int factor_binomial_to_gcf(int a, int b);
 int canDivide(int f, int l);
 int isInteger(double val);
 
-int findArea(Shape s);
-int findPerimeter(Shape s);
+int findArea(Quad* s);
+int findPerimeter(Quad* s);
 
-int findCircleArea(Circle c);
-int findCircleDiameter(Circle c);
+int findCircleArea(Circle* c);
+int findCircleDiameter(Circle* c);
 
 #endif
