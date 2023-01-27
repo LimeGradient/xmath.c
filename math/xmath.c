@@ -59,10 +59,20 @@ Quad* new_quad(int l, int w) {
     return q;
 }
 
+Quad* free_quad(Quad* q) {
+    free(q);
+    return 0;
+}
+
 Circle* new_circle(double r) {
     Circle* c = malloc(sizeof(Circle));
     c->r = r;
     return c;
+}
+
+Circle* free_circle(Circle* c) {
+    free(c);
+    return 0;
 }
 
 Vector2* new_vector2(int x, int y) {
@@ -70,4 +80,9 @@ Vector2* new_vector2(int x, int y) {
     v->x = x;
     v->y = y;
     return v;
+}
+
+Vector2* free_vector2(Vector2* v) {
+    free(v);
+    return 0;
 }

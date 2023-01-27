@@ -11,5 +11,7 @@ int main() {
     printf("%d\n", factor_binomial_to_gcf(5, 10));
     printf("%d\n", findCircleArea(circle));
 
+    free_circle(circle);
+
     return 0;
 }

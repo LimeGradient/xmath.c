@@ -24,6 +24,10 @@ Quad* new_quad(int l, int w);
 Circle* new_circle(double r);
 Vector2* new_vector2(int x, int y);
 
+Quad* free_quad(Quad* q);
+Circle* free_circle(Circle* c);
+Vector2* free_vector2(Vector2* v);
+
 double pi;
 
 int factor_binomial_to_gcf(int a, int b);
