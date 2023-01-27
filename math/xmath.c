@@ -2,6 +2,8 @@
 
 #include "xmath.h"
 
+double pi = 3.14;
+
 int isInteger(double val) {
     int t = (int)val; // Turns double into int
     if (val == t) {
@@ -39,4 +41,12 @@ int findArea(Shape s) {
 
 int findPerimeter(Shape s) {
     return (2 * s.l) + (2 * s.w);
+}
+
+int findCircleDiameter(Circle c) {
+    return c.r * 2;
+}
+
+int findCircleArea(Circle c) {
+    return (c.r * c.r) * pi;
 }
