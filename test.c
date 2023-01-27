@@ -3,12 +3,7 @@
 #include "math/xmath.h"
 
 int main() {
-    Binomial binomial;
-    binomial.a = 3;
-    binomial.b = 6;
-    binomial.s[2] = "+";
-
-    printf("%d\n", canDivide(6, 3));
+    printf("%d\n", factor_binomial(3, 6));
 
     return 0;
 }
