@@ -8,5 +8,7 @@ int main() {
     binomial.b = 6;
     binomial.s[2] = "+";
 
+    printf("%d\n", canDivide(6, 3));
+
     return 0;
 }
