@@ -10,8 +10,16 @@ struct Circle
 {
     double r;
 };
+struct Vector2 
+{
+    int x;
+    int y;
+};
+Vector2* new_vector2(int x, int y);
+
 typedef struct Shape Shape;
 typedef struct Circle Circle;
+typedef struct Vector2 Vector2;
 
 double pi;
 

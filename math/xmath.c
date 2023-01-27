@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "xmath.h"
 
@@ -49,4 +50,11 @@ int findCircleDiameter(Circle c) {
 
 int findCircleArea(Circle c) {
     return (c.r * c.r) * pi;
+}
+
+Vector2* new_vector2(int x, int y) {
+    Vector2* v = malloc(sizeof(Vector2));
+    v->x = x;
+    v->y = y;
+    return v;
 }

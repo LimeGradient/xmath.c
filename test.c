@@ -10,6 +10,8 @@ int main() {
     Circle circle;
     circle.r = 5;
 
+    Vector2* vector2 = new_vector2(10, 9);
+
     printf("%d\n", factor_binomial_to_gcf(5, 10));
     printf("%d\n", findCircleArea(circle));
 
