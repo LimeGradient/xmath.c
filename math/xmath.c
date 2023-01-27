@@ -32,3 +32,11 @@ int factor_binomial_to_gcf(int a, int b) { // it actually does
         return -1;
     }
 }
+
+int findArea(Shape s) {
+    return s.l * s.w;
+}
+
+int findPerimeter(Shape s) {
+    return (2 * s.l) + (2 * s.w);
+}
