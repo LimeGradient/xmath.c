@@ -22,7 +22,7 @@ int canDivide(int f, int l) {
     }
 }
 
-int factor_binomial_to_gcf(int a, int b) {
+int factor_binomial_to_gcf(int a, int b) { // it actually does
     if (canDivide(b, a) == 0) {
         int i = a * canDivide_RESULT;
         if (i == b) {
